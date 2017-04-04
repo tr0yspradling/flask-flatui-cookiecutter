@@ -4,9 +4,10 @@ from flask import Flask, render_template
 
 from {{cookiecutter.app_name}} import commands, public, user
 from {{cookiecutter.app_name}}.assets import assets
-from {{cookiecutter.app_name}}.extensions import bcrypt, cache, csrf_protect, db, debug_toolbar, login_manager, migrate
+from {{cookiecutter.app_name}}.extensions import (bcrypt, cache, csrf_protect,
+                                                  db, debug_toolbar,
+                                                  login_manager, migrate)
 from {{cookiecutter.app_name}}.settings import ProdConfig
-
 
 def create_app(config_object=ProdConfig):
     """An application factory, as explained here: http://flask.pocoo.org/docs/patterns/appfactories/.
@@ -22,26 +23,25 @@ def create_app(config_object=ProdConfig):
     register_commands(app)
     return app
 
-
 def register_extensions(app):
     """Register Flask extensions."""
     assets.init_app(app)
     bcrypt.init_app(app)
     cache.init_app(app)
     db.init_app(app)
+    with app.app_context():
+        db.create_all()
     csrf_protect.init_app(app)
     login_manager.init_app(app)
     debug_toolbar.init_app(app)
     migrate.init_app(app, db)
     return None
 
-
 def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(public.views.blueprint)
     app.register_blueprint(user.views.blueprint)
     return None
-
 
 def register_errorhandlers(app):
     """Register error handlers."""
@@ -54,7 +54,6 @@ def register_errorhandlers(app):
         app.errorhandler(errcode)(render_error)
     return None
 
-
 def register_shellcontext(app):
     """Register shell context objects."""
     def shell_context():
@@ -64,7 +63,6 @@ def register_shellcontext(app):
             'User': user.models.User}
 
     app.shell_context_processor(shell_context)
-
 
 def register_commands(app):
     """Register Click commands."""
