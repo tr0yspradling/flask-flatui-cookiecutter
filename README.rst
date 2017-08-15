@@ -1,4 +1,4 @@
-cookiecutter-flask
+Flat-UI Flask Project
 ==================
 
 A Flask template for cookiecutter_.
@@ -21,6 +21,8 @@ Features
 - [Bootstrap 4](https://v4-alpha.getbootstrap.com/) and [Font Awesome 4](http://fontawesome.io/) with starter templates
 - [FlatUI](https://designmodo.github.io/Flat-UI/)
 - [jQuery 3](https://jquery.com/)
+- Pre-configured production NGINX configuration
+- LetsEncrypt Integration(coming soon)
 - Flask-SQLAlchemy with basic User model
 - Easy database migrations with Flask-Migrate
 - Flask-WTForms with login and registration forms
@@ -34,8 +36,3 @@ Features
 - Caching using Flask-Cache
 - Useful debug toolbar
 - Utilizes best practices: `Blueprints <http://flask.pocoo.org/docs/blueprints/>`_ and `Application Factory <http://flask.pocoo.org/docs/patterns/appfactories/>`_ patterns
-
-License
--------
-
-BSD licensed.

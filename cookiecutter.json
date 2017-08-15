@@ -1,8 +1,9 @@
 {
-	"full_name": "Steven Loria",
-	"email": "sloria1@gmail.com",
-	"github_username": "sloria",
+	"full_name": "Troy Spradling ",
+	"email": "troy@reddresssolutions.com",
+	"github_username": "tr0yspradling",
 	"project_name": "My Flask App",
 	"app_name": "myflaskapp",
-	"project_short_description": "A flasky app."
+	"domain": "myflaskapp.com",
+	"project_short_description": "A flasky app.",
 }
