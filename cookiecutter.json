@@ -4,6 +4,8 @@
 	"github_username": "tr0yspradling",
 	"project_name": "My Flask App",
 	"app_name": "myflaskapp",
+	"project_dir": "/home/troy/Projects/myflaskapp",
 	"domain": "myflaskapp.com",
-	"project_short_description": "A flasky app."
+	"project_short_description": "A flasky app.",
+	"debug_database_file": "dev.db"
 }
