@@ -18,9 +18,9 @@ You will be asked about your basic info (name, project name, app name, etc.). Th
 Features
 --------
 
-- [Bootstrap 4](https://v4-alpha.getbootstrap.com/) and [Font Awesome 4](http://fontawesome.io/) with starter templates
-- [FlatUI](https://designmodo.github.io/Flat-UI/)
-- [jQuery 3](https://jquery.com/)
+- Bootstrap 4 [https://v4-alpha.getbootstrap.com/] and [Font Awesome 4](http://fontawesome.io/) with starter templates
+- FlatUI[https://designmodo.github.io/Flat-UI/]
+- jQuery 3 [https://jquery.com/]
 - Pre-configured production NGINX configuration
 - LetsEncrypt Integration(coming soon)
 - Flask-SQLAlchemy with basic User model
