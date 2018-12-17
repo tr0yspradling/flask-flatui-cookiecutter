@@ -4,9 +4,9 @@
 	"github_username": "tr0yspradling",
 	"project_name": "My Flask App",
 	"app_name": "{{cookiecutter.project_name|lower|replace(' ', '_')}}",
-	"project_dir": "/home/troy/Projects/myflaskapp",
-	"domain": "myflaskapp.com",
-	"project_short_description": "A flasky app.",
-	"debug_database_file": "dev.db",
+	"project_dir": "/var/www/{{cookiecutter.app_name}}",
+	"domain": "{{cookiecutter.project_name|lower|replace(' ', '')}}.com",
+	"project_short_description": "{{cookiecutter.project_name}}.",
+	"debug_database_file": "database/dev.db",
 	"secret_key": ""
 }

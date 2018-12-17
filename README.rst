@@ -8,6 +8,9 @@ A Flask template for cookiecutter_.
 
 Use it now
 ----------
+First please visit `Django Secret Key Generator <https://www.miniwebtool.com/django-secret-key-generator/>`_. Grab the secret key to use with the cookiecutter prompt.
+
+Next install cookiecutter & run the generator:
 ::
 
     $ pip install cookiecutter
@@ -15,8 +18,6 @@ Use it now
 
 You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
 
-After your project files have been generated, visit `Django Secret Key Generator <https://www.miniwebtool.com/django-secret-key-generator/>`_.
-Add the
 
 Features
 --------
