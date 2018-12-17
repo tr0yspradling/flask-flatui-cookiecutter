@@ -1,5 +1,8 @@
 # everything needed in production
 
+# uwsgi server
+uwsgi
+
 # flask
 flask
 markupsafe

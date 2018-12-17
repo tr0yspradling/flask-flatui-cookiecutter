@@ -8,5 +8,6 @@
 	"domain": "{{cookiecutter.project_name|lower|replace(' ', '')}}.com",
 	"project_short_description": "{{cookiecutter.project_name}}.",
 	"debug_database_file": "database/dev.db",
+	"virtual_env": ".env",
 	"secret_key": ""
 }

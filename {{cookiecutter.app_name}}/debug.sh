@@ -2,7 +2,7 @@
 #rm -f dev.db
 
 # activate virtualenv
-source env/bin/activate
+source {{cookiecutter.virtual_env}}/bin/activate
 
 # set debug flag
 export FLASK_DEBUG=TRUE

@@ -44,5 +44,8 @@ README.html
 # Cookiecutter
 output/
 
-myflaskapp/
 bower_components
+
+.idea/
+.vscode/
+.atom/
