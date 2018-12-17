@@ -44,3 +44,13 @@ docs/_build
 
 # Virtualenvs
 env/
+venv/
+.env/
+.venv/
+
+static/public/
+
+.idea/
+.vscode
+.atom
+

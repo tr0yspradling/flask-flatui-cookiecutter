@@ -1,5 +1,5 @@
 Flat-UI Flask Project
-==================
+=====================
 
 A Flask template for cookiecutter_.
 
@@ -15,24 +15,26 @@ Use it now
 
 You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
 
+After your project files have been generated, visit `Django Secret Key Generator <https://www.miniwebtool.com/django-secret-key-generator/>`_.
+Add the
+
 Features
 --------
 
-- Bootstrap 4 [https://v4-alpha.getbootstrap.com/] and [Font Awesome 4](http://fontawesome.io/) with starter templates
-- FlatUI[https://designmodo.github.io/Flat-UI/]
-- jQuery 3 [https://jquery.com/]
-- Pre-configured production NGINX configuration
-- LetsEncrypt Integration(coming soon)
-- Flask-SQLAlchemy with basic User model
-- Easy database migrations with Flask-Migrate
-- Flask-WTForms with login and registration forms
-- Flask-Login for authentication
-- Flask-Bcrypt for password hashing
-- Procfile for deploying to a PaaS (e.g. Heroku)
-- pytest and Factory-Boy for testing (example tests included)
-- Flask's Click CLI configured with simple commands
-- CSS and JS minification using Flask-Assets
-- Optional bower support for frontend package management
-- Caching using Flask-Cache
-- Useful debug toolbar
-- Utilizes best practices: `Blueprints <http://flask.pocoo.org/docs/blueprints/>`_ and `Application Factory <http://flask.pocoo.org/docs/patterns/appfactories/>`_ patterns
+- `Bootstrap 4 <https://v4-alpha.getbootstrap.com/>`_ and `Font Awesome 4 <http://fontawesome.io/>`_ based starter template.
+- `FlatUI <https://designmodo.github.io/Flat-UI/>`_ themed.
+- Uses `jQuery 3 <https://jquery.com/>`_.
+- Pre-configured production ready `NGINX <https://nginx.org/en/>`_ configuration with `Let's Encrypt SSL <https://letsencrypt.org/>`_.
+- Flask-SQLAlchemy with basic User model.
+- Easy database migrations with Flask-Migrate.
+- Flask-WTForms with login and registration forms.
+- Flask-Login for authentication.
+- Flask-Bcrypt for password hashing.
+- Procfile for deploying to a PaaS (e.g. Heroku).
+- pytest and Factory-Boy for testing (example tests included).
+- Flask's Click CLI configured with simple commands.
+- CSS and JS minification using Flask-Assets.
+- Optional bower support for frontend package management.
+- Caching using Flask-Cache.
+- Useful debug toolbar.
+- Utilizes Flask's best practices.

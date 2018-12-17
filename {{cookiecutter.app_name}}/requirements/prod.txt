@@ -1,39 +1,39 @@
-# Everything needed in production
+# everything needed in production
 
-# Flask
-Flask==0.12
-MarkupSafe==1.0
-Werkzeug==0.12.1
-Jinja2==2.9.5
-itsdangerous==0.24
-click>=5.0
+# flask
+flask
+markupsafe
+werkzeug
+jinja2
+itsdangerous
+click
 
-# Database
-Flask-SQLAlchemy==2.2
-psycopg2==2.7.1
-SQLAlchemy==1.1.5
+# database
+flask-sqlalchemy
+psycopg2
+sqlalchemy
 
-# Migrations
-Flask-Migrate==2.0.3
+# migrations
+flask-migrate
 
-# Forms
-Flask-WTF==0.14.2
-WTForms==2.1
+# forms
+flask-wtf
+wtforms
 
-# Deployment
-gunicorn>=19.1.1
+# deployment
+gunicorn
 
-# Assets
-Flask-Assets==0.12
-cssmin>=0.2.0
-jsmin>=2.0.11
+# assets
+flask-assets
+cssmin
+jsmin
 
-# Auth
-Flask-Login==0.4.0
-Flask-Bcrypt==0.7.1
+# auth
+flask-login
+flask-bcrypt
 
-# Caching
-Flask-Caching>=1.0.0
+# caching
+flask-caching
 
-# Debug toolbar
-Flask-DebugToolbar==0.10.1
+# debug toolbar
+flask-debugtoolbar

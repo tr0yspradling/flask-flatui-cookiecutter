@@ -3,9 +3,10 @@
 	"email": "troy@reddresssolutions.com",
 	"github_username": "tr0yspradling",
 	"project_name": "My Flask App",
-	"app_name": "myflaskapp",
+	"app_name": "{{cookiecutter.project_name|lower|replace(' ', '_')}}",
 	"project_dir": "/home/troy/Projects/myflaskapp",
 	"domain": "myflaskapp.com",
 	"project_short_description": "A flasky app.",
-	"debug_database_file": "dev.db"
+	"debug_database_file": "dev.db",
+	"secret_key": ""
 }
