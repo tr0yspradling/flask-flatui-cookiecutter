@@ -17,21 +17,21 @@ def run(app, default_host="127.0.0.1",
     """
 
     # Set up the command-line options
-    parser = argparse.Ar()
-    parser.add_option("-H", "--host",
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-H", "--host",
                       help="Hostname of the Flask app " + \
                            "[default %s]" % default_host,
                       default=default_host)
-    parser.add_option("-P", "--port",
+    parser.add_argument("-P", "--port",
                       help="Port for the Flask app " + \
                            "[default %s]" % default_port,
                       default=default_port)
     # Two options useful for debugging purposes, but
     # a bit dangerous so not exposed in the help message.
-    parser.add_option("-d", "--debug",
+    parser.add_argument("-d", "--debug",
                       action="store_true", dest="debug",
                       help=argparse.SUPPRESS)
-    parser.add_option("-p", "--profile",
+    parser.add_argument("-p", "--profile",
                       action="store_true", dest="profile",
                       help=argparse.SUPPRESS)
     options, _ = parser.parse_args()

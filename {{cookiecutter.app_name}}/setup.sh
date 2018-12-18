@@ -24,4 +24,4 @@ source $ENV/bin/activate
 pip install -r requirements.txt
 deactivate
 
-sudo letsencrypt certonly -d {{cookiecutter.domain}}
+#sudo letsencrypt certonly -d {{cookiecutter.domain}}
