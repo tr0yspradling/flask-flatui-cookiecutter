@@ -9,37 +9,5 @@ CONFIG = DevConfig if get_debug_flag() else ProdConfig
 
 app = create_app(CONFIG)
 
-def run(app, default_host="127.0.0.1",
-             default_port="5000"):
-    """
-    Takes a flask.Flask instance and runs it. Parses
-    command-line flags to configure the app.
-    """
-
-    # Set up the command-line options
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-H", "--host",
-                      help="Hostname of the Flask app " + \
-                           "[default %s]" % default_host,
-                      default=default_host)
-    parser.add_argument("-P", "--port",
-                      help="Port for the Flask app " + \
-                           "[default %s]" % default_port,
-                      default=default_port)
-    # Two options useful for debugging purposes, but
-    # a bit dangerous so not exposed in the help message.
-    parser.add_argument("-d", "--debug",
-                      action="store_true", dest="debug",
-                      help=argparse.SUPPRESS)
-    parser.add_argument("-p", "--profile",
-                      action="store_true", dest="profile",
-                      help=argparse.SUPPRESS)
-    options, _ = parser.parse_args()
-    app.run(
-        debug=options.debug,
-        host=options.host,
-        port=int(options.port)
-    )
-
 if __name__ == '__main__':
-    run(app, default_port=8080)
+    app.run(port=8080)

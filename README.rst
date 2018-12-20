@@ -25,6 +25,7 @@ Features
 - `Bootstrap 4 <https://v4-alpha.getbootstrap.com/>`_ and `Font Awesome 4 <http://fontawesome.io/>`_ based starter template.
 - `FlatUI <https://designmodo.github.io/Flat-UI/>`_ themed.
 - Uses `jQuery 3 <https://jquery.com/>`_.
+- Prebuilt Docker config.
 - Pre-configured production ready `NGINX <https://nginx.org/en/>`_ configuration with `Let's Encrypt SSL <https://letsencrypt.org/>`_.
 - Flask-SQLAlchemy with basic User model.
 - Easy database migrations with Flask-Migrate.
